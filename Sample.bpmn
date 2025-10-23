@@ -3,6 +3,8 @@
   <bpmn2:collaboration id="_3E9DA7DC-324E-4A26-BA74-64A4EF337D3A" name="Default Collaboration">
     <bpmn2:participant id="_2A129FDD-0204-45AC-B667-9BCDAE93F74E" name="Pool Participant" processRef="hiring" />
   </bpmn2:collaboration>
+  <bpmn2:correlationProperty id="_509122DC-A715-4E96-A548-147E07A415BC" name="New Property">
+  </bpmn2:correlationProperty>
   <bpmn2:itemDefinition id="_hr_approvalItem" structureRef="Boolean" />
   <bpmn2:itemDefinition id="_it_approvalItem" structureRef="Boolean" />
   <bpmn2:itemDefinition id="_offerItem" structureRef="Integer" />
@@ -243,6 +245,14 @@ System.out.println(&quot;###################################&quot;);
 
 kcontext.setVariable(&quot;hr_approval&quot;, false);
 kcontext.setVariable(&quot;it_approval&quot;, false);</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:scriptTask id="_2542892A-36E2-409E-92E3-1A8650D0FE19" name="New Task">
+      <bpmn2:ioSpecification id="_6EFF36F9-FBAA-4AA2-A968-C6DD13F1A9F4">
+        <bpmn2:inputSet id="_9260482B-57EB-49A6-95FF-168731D7BF9B">
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_D564BB46-AB11-4A84-A788-62305BF321C2">
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_C500BCB4-FBE1-43A0-A7C8-5F72670CD927" sourceRef="_B375FFE6-D0A8-4E4F-A7AA-8B1E8B861E0D" targetRef="_F1B20FAB-EDDC-4114-8AE8-B00E3F94975E" />
     <bpmn2:sequenceFlow id="_7DDA574A-C220-4FEF-9784-22EF8052EDEC" sourceRef="_940F2A0C-8CC6-4ECA-B504-49363AF68B67" targetRef="_6CE52250-BCEE-485C-8AE4-F6CACF2EF5A1" />
@@ -552,6 +562,9 @@ kcontext.setVariable(&quot;it_approval&quot;, false);</bpmn2:script>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BD024F88-729E-4E41-86C0-734AD4FA87B6" bpmnElement="_A2E82EB4-8285-4E05-AAB1-C219AAF00938">
         <dc:Bounds x="520" y="560" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_F36B842A-C5A3-4B55-986B-E46ABFCDF986" bpmnElement="_2542892A-36E2-409E-92E3-1A8650D0FE19">
+        <dc:Bounds x="220" y="560" width="180" height="100" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__116F3C54-A10E-4952-9E08-1CACE74CED0B_to_shape__F1B20FAB-EDDC-4114-8AE8-B00E3F94975E" bpmnElement="_7B41F971-C74D-4036-8A5E-EFF81C37986A">
         <di:waypoint x="716.936170212766" y="114.00000000000006" />
