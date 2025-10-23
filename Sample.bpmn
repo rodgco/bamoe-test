@@ -290,7 +290,14 @@ kcontext.setVariable(&quot;it_approval&quot;, false);</bpmn2:script>
     <bpmn2:startEvent id="_1639F738-45F3-4CD6-A80E-CCEBAA605D56">
       <bpmn2:outgoing>_8863B46B-9B0F-40B9-AAB1-A7503CF9AA0A</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:task id="_992E846F-9B94-4E41-9350-F5A3DAC1AB58" name="New Task" />
+    <bpmn2:task id="_992E846F-9B94-4E41-9350-F5A3DAC1AB58" name="New Task" drools:taskName="Milestone">
+      <bpmn2:ioSpecification id="_E2020687-9D98-4F03-A3AD-3D6D87ECBBDE">
+        <bpmn2:inputSet id="_1CF6E1DE-8EEC-4846-BBCC-8728ED84591F">
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_A1702165-3965-4CFF-86B9-38598A2A0EC6">
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+    </bpmn2:task>
     <bpmn2:task id="_A2E82EB4-8285-4E05-AAB1-C219AAF00938" drools:taskName="Gen AI Task" name="Gen AI Task">
       <bpmn2:ioSpecification id="_C68836CD-EE33-4454-B555-1C011D221BED">
         <bpmn2:dataInput id="_567F9C87-F671-497C-9067-9A6E9380A3FE" name="genAiProvider" drools:dtype="String" itemSubjectRef="__8962C15F-55EC-46F7-B926-5D5A1FD8D35E_categoryInputXItem" />
@@ -541,7 +548,7 @@ kcontext.setVariable(&quot;it_approval&quot;, false);</bpmn2:script>
         <dc:Bounds height="56" width="56" x="795" y="196" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_E4D781DD-1E4E-498E-92B8-0F8560396CB3" bpmnElement="_992E846F-9B94-4E41-9350-F5A3DAC1AB58">
-        <dc:Bounds x="280" y="300" width="180" height="100" />
+        <dc:Bounds x="60" y="380" width="180" height="100" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BD024F88-729E-4E41-86C0-734AD4FA87B6" bpmnElement="_A2E82EB4-8285-4E05-AAB1-C219AAF00938">
         <dc:Bounds x="520" y="560" width="180" height="100" />
